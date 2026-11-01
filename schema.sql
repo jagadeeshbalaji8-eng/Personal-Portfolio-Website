@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS portfolio_db;
+USE portfolio_db;
+
+CREATE TABLE IF NOT EXISTS project (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(120) NOT NULL,
+  description TEXT NOT NULL,
+  tech_stack VARCHAR(255) NOT NULL,
+  project_url VARCHAR(500),
+  github_url VARCHAR(500),
+  image_url VARCHAR(500)
+);
+
+CREATE TABLE IF NOT EXISTS message (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(150) NOT NULL,
+  message TEXT NOT NULL
+);
